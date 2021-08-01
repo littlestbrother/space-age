@@ -15,7 +15,7 @@ describe('Object "Date" creation', () => {
         let newPerson = new Person(3,21,2002);
         console.log(newPerson);
         newPerson.today();
-        expect(newPerson.nowMonth).toEqual(3);
+        expect(newPerson.nowMonth).toEqual(03);
         expect(newPerson.nowDay).toEqual(21);
         expect(newPerson.nowYear).toEqual(2002);
     });
