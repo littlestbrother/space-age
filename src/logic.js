@@ -30,6 +30,6 @@ export class Person {
             }
             lifeExp = (yearCap - this.age);
         }
-        return lifeExp;
+        this.lifeExp = lifeExp;
     }
 }

@@ -13,8 +13,24 @@ describe('Object "Person" creation', () => {
   describe('getLifeExp()', () => {
     test('should calculate users life expectancy', () => {
         let newPerson = new Person(19,'male',true);
+        newPerson.getLifeExp();
+        expect(newPerson.lifeExp).toEqual(57);
+    });
+  });
+
+  describe('calc()', () => {
+    test('should calculate append the users age and life expectency multiplied by planets multiplier', () => {
+        let newPerson = new Person(19,'male',true);
         console.log(newPerson);
-        // newPerson.getLifeExp()
-        expect(newPerson.getLifeExp()).toEqual(57);
+        newPerson.getLifeExp();
+        newPerson.calc();
+        expect(newPerson.mercuryAge).toEqual(0);
+        expect(newPerson.mercuryExp).toEqual(0);
+        expect(newPerson.venusAge).toEqual(0);
+        expect(newPerson.venusExp).toEqual(0);
+        expect(newPerson.marsAge).toEqual(0);
+        expect(newPerson.marsExp).toEqual(0);
+        expect(newPerson.jupiterAge).toEqual(0);
+        expect(newPerson.jupiterExp).toEqual(0);
     });
   });
