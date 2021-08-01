@@ -1,13 +1,7 @@
-export class Person{
-    constructor(birthMonth,birthDay,birthYear){
-        this.birthMonth = birthMonth;
-        this.birthDay= birthDay;
-        this.birthYear = birthYear;
-    } 
-    today(){
-        let today = new Date();
-        this.nowMonth = today.getMonth();
-        this.nowDay = today.getDate();
-        this.nowYear = today.getFullYear();
+export class Person {
+    constructor(age, gender, helmet) {
+        this.age = age;
+        this.gender = gender;
+        this.helmet = helmet;
     }
 }

@@ -2,22 +2,20 @@ import { Person } from '../src/logic.js'
 
 describe('Object "Date" creation', () => {
     test('should create Date class', () => {
-        let newPerson = new Person(3,21,2002);
+        let newPerson = new Person(19,'male',true);
         console.log(newPerson);
-        expect(newPerson.birthMonth).toEqual(3);
-        expect(newPerson.birthDay).toEqual(21);
-        expect(newPerson.birthYear).toEqual(2002);
+        expect(newPerson.age).toEqual(19);
+        expect(newPerson.gender).toEqual('male');
+        expect(newPerson.helmet).toEqual(true);
+
     });
   });
 
-  describe('Method today()', () => {
-    test('should get todays date and add to Person object', () => {
-        let newPerson = new Person(3,21,2002);
+  describe('getLifeExp()', () => {
+    test('should calculate users life expectancy', () => {
+        let newPerson = new Person(19,'male',true);
         console.log(newPerson);
-        newPerson.today();
-        console.log(newPerson);
-        expect(newPerson.nowMonth).toEqual(6);
-        expect(newPerson.nowDay).toEqual(31);
-        expect(newPerson.nowYear).toEqual(2021);
+        newPerson.getLifeExp()
+        expect(newPerson.getLifeExp()).toEqual(20);
     });
   });
