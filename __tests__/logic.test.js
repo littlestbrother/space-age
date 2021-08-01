@@ -6,6 +6,6 @@ describe('Object "Date" creation', () => {
         console.log(newDate);
         expect(newDate.month).toEqual(3);
         expect(newDate.day).toEqual(21);
-        expect(newDate.year).toEqual(21);
+        expect(newDate.year).toEqual(2002);
     });
   });
