@@ -1,8 +1,7 @@
-export default class Date{
-    constructor(month,day,year){
-        this.month = month;
-        this.day= day;
-        this.year = year;
-    }
-    //methods go here
+export class Person{
+    constructor(birthMonth,birthDay,birthYear){
+        this.birthMonth = birthMonth;
+        this.birthDay= birthDay;
+        this.birthYear = birthYear;
+    } 
 }

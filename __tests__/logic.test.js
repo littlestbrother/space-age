@@ -1,11 +1,22 @@
-import Date from '../src/logic.js'
+import { Person } from '../src/logic.js'
 
 describe('Object "Date" creation', () => {
     test('should create Date class', () => {
-        let newDate = new Date(3,21,2002);
-        console.log(newDate);
-        expect(newDate.month).toEqual(3);
-        expect(newDate.day).toEqual(21);
-        expect(newDate.year).toEqual(2002);
+        let newPerson = new Person(3,21,2002);
+        console.log(newPerson);
+        expect(newPerson.birthMonth).toEqual(3);
+        expect(newPerson.birthDay).toEqual(21);
+        expect(newPerson.birthYear).toEqual(2002);
+    });
+  });
+
+  describe('Method today()', () => {
+    test('should get todays date and add to Person object', () => {
+        let newPerson = new Person(3,21,2002);
+        console.log(newPerson);
+        newPerson.today();
+        expect(newPerson.nowMonth).toEqual(3);
+        expect(newPerson.nowDay).toEqual(21);
+        expect(newPerson.nowYear).toEqual(2002);
     });
   });
