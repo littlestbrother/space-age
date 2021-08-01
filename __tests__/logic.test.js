@@ -24,12 +24,12 @@ describe('Object "Person" creation', () => {
         console.log(newPerson);
         newPerson.getLifeExp();
         newPerson.calc();
-        expect(newPerson.mercuryAge).toEqual(0);
-        expect(newPerson.mercuryExp).toEqual(0);
-        expect(newPerson.venusAge).toEqual(0);
-        expect(newPerson.venusExp).toEqual(0);
-        expect(newPerson.marsAge).toEqual(0);
-        expect(newPerson.marsExp).toEqual(0);
+        expect(newPerson.mercuryAge).toEqual(4.56);
+        expect(newPerson.mercuryExp).toEqual(13.68);
+        expect(newPerson.venusAge).toEqual(11.78);
+        expect(newPerson.venusExp).toEqual(35.34);
+        expect(newPerson.marsAge).toEqual(35.72);
+        expect(newPerson.marsExp).toEqual(107.16);
         expect(newPerson.jupiterAge).toEqual(0);
         expect(newPerson.jupiterExp).toEqual(0);
     });
