@@ -30,7 +30,8 @@ describe('Object "Person" creation', () => {
         expect(newPerson.venusExp).toEqual(35.34);
         expect(newPerson.marsAge).toEqual(35.72);
         expect(newPerson.marsExp).toEqual(107.16);
-        expect(newPerson.jupiterAge).toEqual(0);
-        expect(newPerson.jupiterExp).toEqual(0);
+        expect(newPerson.jupiterAge).toEqual(225.34);
+        expect(newPerson.jupiterExp).toEqual(676.02);
+        console.log(newPerson);
     });
   });
