@@ -1,4 +1,4 @@
-export class Person {
+export default class Person {
     constructor(age, gender, helmet) {
         this.age = age;
         this.gender = gender;
@@ -33,14 +33,14 @@ export class Person {
         this.lifeExp = lifeExp;
     }
 
-    calc(){
-        this.mercuryAge = Math.round((this.age * 0.24)*100)/100;
-        this.mercuryExp = Math.round((this.lifeExp * 0.24)*100)/100;
-        this.venusAge = Math.round((this.age * 0.62)*100)/100;
-        this.venusExp = Math.round((this.lifeExp * 0.62)*100)/100;
-        this.marsAge = Math.round((this.age * 1.88)*100)/100;
-        this.marsExp = Math.round((this.lifeExp * 1.88)*100)/100;
-        this.jupiterAge = Math.round((this.age * 11.86)*100)/100;
-        this.jupiterExp = Math.round((this.lifeExp * 11.86)*100)/100;
+    calc() {
+        this.mercuryAge = Math.round((this.age * 0.24) * 100) / 100;
+        this.mercuryExp = Math.round((this.lifeExp * 0.24) * 100) / 100;
+        this.venusAge = Math.round((this.age * 0.62) * 100) / 100;
+        this.venusExp = Math.round((this.lifeExp * 0.62) * 100) / 100;
+        this.marsAge = Math.round((this.age * 1.88) * 100) / 100;
+        this.marsExp = Math.round((this.lifeExp * 1.88) * 100) / 100;
+        this.jupiterAge = Math.round((this.age * 11.86) * 100) / 100;
+        this.jupiterExp = Math.round((this.lifeExp * 11.86) * 100) / 100;
     }
 }

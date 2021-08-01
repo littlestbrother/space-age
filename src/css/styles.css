@@ -1,3 +1,23 @@
-.greeting{
-    color:blue;
+h1, label, input, button,p {
+    /* background-color: black; */
+    color: white;
+}
+
+body {
+    /* background-color: black; */
+    background-image: url('https://i.gifer.com/1QIa.gif');
+    background-repeat: repeat;
+}
+
+.container {
+    width: 50%;
+    margin-top: 5%;
+}
+
+#age {
+    width: 25%;
+}
+
+#result{
+    width: 50%;
 }
