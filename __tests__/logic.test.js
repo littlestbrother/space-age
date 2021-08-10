@@ -38,6 +38,30 @@ describe('getLifeExp()', () => {
   });
 });
 
+describe('getLifeExp()', () => {
+  test('should calculate users life expectancy', () => {
+    let newPerson = new Person(19, 'female', true);
+    newPerson.getLifeExp();
+    expect(newPerson.lifeExp).toEqual(62);
+  });
+});
+
+describe('getLifeExp()', () => {
+  test('should calculate users life expectancy', () => {
+    let newPerson = new Person(19, 'female', false);
+    newPerson.getLifeExp();
+    expect(newPerson.lifeExp).toEqual(0);
+  });
+});
+
+describe('getLifeExp()', () => {
+  test('should calculate users life expectancy', () => {
+    let newPerson = new Person(19, 'horse', true);
+    newPerson.getLifeExp();
+    expect(newPerson.lifeExp).toEqual(-19);
+  });
+});
+
 describe('calc()', () => {
   test('should calculate append the users age and life expectency multiplied by planets multiplier', () => {
     let newPerson = new Person(19, 'male', true);
